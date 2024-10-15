@@ -769,7 +769,6 @@ input::placeholder {
     #menuListbutton {
         transition: all 0.5s;
         height: 400px;
-        margin-top: 20px;
     }
 
     .menu-icon {
@@ -779,7 +778,7 @@ input::placeholder {
     .menu-icon i {
         color: #ffffff;
         font-size: 25px;
-        padding: 35px;
+        padding: 24px 35px;
     }
 
     .maincontainer {
