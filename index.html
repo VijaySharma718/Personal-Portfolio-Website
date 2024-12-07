@@ -14,66 +14,83 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar_logo">
-            <!-- <h1>Vijay Sharma</h1> -->
-            <a href="#page1"> <img src="—Pngtree—vs logo on colorful scrath_5993167.png" alt="" srcset=""></a>
-        </div>
+    <nav class="bg-container">
+        <div class="nav-background">
+            <div class="main-container">
+                <div class="logo-container">
+                    <img src="img1.jpg" alt="profile" srcset="">
+                </div>
 
-        <div class="navmenubar">
-            <div class="menucontainer">
-                <ul id="menuListbutton">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#Achivement">Achivement</a></li>
-                    <li><a href="VIJAYSHARMARESUME.pdf"> Resume</a></li>
-                    <li><a href="#Contact US">Contact US</a></li>
-                </ul>
+                <div class="menu-container">
+                    <ul id="menuListbutton">
+                        <li><a class="nav-link nav-link-fade-up" href="#about">About</a></li>
+                        <li><a class="nav-link nav-link-fade-up" href="#skills">Skills</a></li>
+                        <li><a class="nav-link nav-link-fade-up" href="#projects">Projects</a></li>
+                        <li><a class="nav-link nav-link-fade-up" href="#Achivement">Achivement</a></li>
+                        <li><a class="nav-link nav-link-fade-up" href="VIJAYSHARMARESUME.pdf"> Resume</a></li>
+                        <li><a class="nav-link nav-link-fade-up" href="#Contact US">Contact US</a></li>
+                    </ul>
+                </div>
+                <div id="menubutton" class="menuicon">
+                    <i class="fa-solid fa-bars" onclick=""></i>
+                </div>
             </div>
         </div>
+        <div class="progress-bar" id="myBar"></div>
 
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        <div class="menu-container-responsive">
+            <ul id="menuListbutton">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Achivement">Achivement</a></li>
+                <li><a href="VIJAYSHARMARESUME.pdf"> Resume</a></li>
+                <li><a href="#Contact US">Contact US</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
-    <div class="main" id="page1">
-        <div class="maincontainer">
-            <h1>Welcome to My
-                <span>Portfolio.</span>
-            </h1>
-            <div class="container_info">
-                <h3>i am a ...</h3>
-            </div>
-            <div class="container">
-                <h3 class="info-about">Front-End Developer</h3>
-                <h3 class="info-about">Website Design</h3>
-                <h3 class="info-about">Graphic Design</h3>
-                <h3 class="info-about">UI/UX Design</h3>
+    <!-- main-content -->
+
+    <main class="motion">
+        <video autoplay muted loop id="myVideo">
+            <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <div class="motion-container">
+
+            <div class="maincontainer">
+
+                <h1>A Glimpse into My World.</h1>
+                <div class="container_info">
+                    <h3>i am a ...</h3>
+                </div>
+                <div class="container">
+                    <h3 class="info-about">Front-End Developer</h3>
+                    <h3 class="info-about">Website Design</h3>
+                    <h3 class="info-about">Graphic Design</h3>
+                    <h3 class="info-about">UI/UX Design</h3>
+                </div>
+
+                <div class="socialmenu_responsive">
+                    <ul>
+                        <li><a href="https://github.com/VijaySharma718" target="blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/vijayfilms_?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/vijay-sharma-1993a6202" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://x.com/vijaysharma2024?t=jXNKDNgz2PseISSG7OmAug&s=08" target="blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="socialmenu_responsive">
-                <p>connect with me -</p>
-                <ul>
-                    <li><a href="https://github.com/VijaySharma718" target="blank"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/vijayfilms_?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/vijay-sharma-1993a6202" target="blank"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://x.com/vijaysharma2024?t=jXNKDNgz2PseISSG7OmAug&s=08" target="blank"><i
-                                class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+    </main>
+    
     <!-- about me section -->
     <section id="about" class="about_content">
         <div class="about_heading">
