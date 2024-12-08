@@ -484,7 +484,7 @@ ul li:nth-child(4) a:hover .fab {
 }
 
 .education_heading {
-    height: 150px;
+    height: auto;
     align-items: center;
 }
 
@@ -735,18 +735,21 @@ input::placeholder {
 }
 
 @media (max-width:840px) {
-     /* ********** */
+
+    /* ********** */
     .menu-container-responsive {
         display: none;
     }
-     /* ********** */
+
+    /* ********** */
     .bg-container {
         width: 100%;
     }
 
     #menuListbutton {
-        transition: all 0.5s;
         height: 400px;
+        margin: 80px 20px;
+
     }
 
     .menuicon {
@@ -797,7 +800,6 @@ input::placeholder {
 
     .p_m_grid_box {
         flex-wrap: wrap;
-        margin-top: 50px;
     }
 
     .p_grid_box {
@@ -852,7 +854,8 @@ input::placeholder {
     }
 
     .education_para_2 p {
-        padding: 0;
+        padding-top: 20px;
+        font-size: 25px;
     }
 
     #c-span {
@@ -881,14 +884,23 @@ input::placeholder {
 
 @media (max-width:600px) {
 
+    .close-icon {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+
     .menuicon {
         display: block;
     }
 
     .menuicon i {
-        color: #ffffff;
+        color: #ffd43b;
         font-size: 25px;
-        padding: 15px 20px;
+        padding: 15px 15px;
     }
 
     .motion {
@@ -909,38 +921,82 @@ input::placeholder {
 
     .menu-container-responsive {
         display: block;
-
     }
 
     .menu-container-responsive ul {
-        padding: 120px 20px;
+        /* padding: 120px 20px; */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
     }
 
-    .menu-container-responsive li a {
+    .menu-container-responsive li {
+        padding: 15px;
+    }
+
+    .menu-container-responsive a {
+        color: #fff;
+        text-decoration: none;
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
+        border-bottom: 1.5px solid #ffd43b;
     }
 
-    #menuListbutton {
-        padding: 20px;
-        transition: left 0.5s ease-in-out;
-        background-color: rgba(19, 19, 19, 0.678);
-        height: 320px;
-        width: 40%;
-        left: -250px;
-        position: absolute;
-        top: 0;
-        border-radius: 0 0 20px 0;
-        z-index: -1;
-
+    .menu-container-responsive {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 100%;
+        height: 70%;
+        background-color: rgba(0, 0, 0, 0.82);
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+        border-radius: 0 0 20px 20px;
     }
 
-    #menuListbutton.active {
-        left: 0;
+    .button {
+        padding: 10px;
+        background-color: #ffc800;
+        color: rgb(67, 67, 67);
+        margin: 30px 10px 0 0;
+        border-radius: 10px;
+    }
+
+    .button a {
+        color: rgb(67, 67, 67);
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+
+    .home a{
+        color: #ffd43b;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: none;
+    }
+
+    .home i{
+        color: #ffd43b;
+        font-size: 15px;
+       
+        
+    }
+
+    .about_heading_1 p {
+        padding-left: 35px;
     }
 
     .container_info h3 {
         font-size: 50px;
+    }
+
+    .p_h_box_2 p {
+        padding: 0;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 30px;
     }
 
     .main_skill_container {

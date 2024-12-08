@@ -16,31 +16,19 @@ setInterval(() => {
 
 // text animation
 
-// let menuListbutton = document.getElementById("menuListbutton")
-//         menuListbutton.style.maxHeight = "0px";
+const menuIcon = document.querySelector(".menuicon");
+const menu = document.querySelector(".menu-container-responsive");
+const closeIcon = document.querySelector(".close-icon");
 
-//         function toggleMenu(){
-//             if(menuListbutton.style.maxHeight == "0px")
-//             {
-//                 menuListbutton.style.maxHeight = "300px";
-//             }
-//             else{
-//                 menuListbutton.style.maxHeight = "0px";
-//             }
-//           }
+menuIcon.addEventListener("click", () => {
+  menu.style.display = "block";
+});
 
-// const menuButton = document.getElementById('menubutton');
-// const menuList = document.getElementById('menuListbutton');
+closeIcon.addEventListener('click', () => {
+  menu.style.display = 'none';
+});
 
-// menubutton.addEventListener('click', () => {
-//   menuListbutton.classList.toggle('active');
-// });
-
-
-
-
-
-
+// scroll bar
 
 window.onscroll = function () {
   myFunction();

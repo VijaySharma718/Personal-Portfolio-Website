@@ -21,11 +21,11 @@
         <div class="nav-background">
             <div class="main-container">
                 <div class="logo-container">
-                    <img src="img1.jpg" alt="profile" srcset="">
+                  <a href="#home"> <img src="img1.jpg" alt="profile" srcset=""></a> 
                 </div>
 
                 <div class="menu-container">
-                    <ul id="menuListbutton">
+                    <ul>
                         <li><a class="nav-link nav-link-fade-up" href="#about">About</a></li>
                         <li><a class="nav-link nav-link-fade-up" href="#skills">Skills</a></li>
                         <li><a class="nav-link nav-link-fade-up" href="#projects">Projects</a></li>
@@ -37,25 +37,30 @@
                 <div id="menubutton" class="menuicon">
                     <i class="fa-solid fa-bars" onclick=""></i>
                 </div>
+                
+
             </div>
         </div>
         <div class="progress-bar" id="myBar"></div>
-
+       
         <div class="menu-container-responsive">
             <ul id="menuListbutton">
+                <li class="home"><a href="#home">&#9978; Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#Achivement">Achivement</a></li>
-                <li><a href="VIJAYSHARMARESUME.pdf"> Resume</a></li>
                 <li><a href="#Contact US">Contact US</a></li>
+                <button class="button"><i class="fa-solid fa-download"> <a href="VIJAYSHARMARESUME.pdf">Download Resume</a></i></button>
             </ul>
+
+            <div class="close-icon">&#10005;</div>
         </div>
     </nav>
 
     <!-- main-content -->
 
-    <main class="motion">
+    <main id="home" class="motion">
         <video autoplay muted loop id="myVideo">
             <source src="videoplayback.mp4" type="video/mp4">
         </video>
