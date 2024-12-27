@@ -18,12 +18,11 @@
     width: 100%;
     position: fixed;
     z-index: 1;
-
 }
 
 #myVideo {
+    height: 140vh;
     width: 100%;
-    height: fit-content;
     object-fit: cover;
     position: absolute;
 }
@@ -53,47 +52,32 @@
     justify-content: center;
 }
 
-.nav-link li {
+.menu-container li {
     list-style: none;
 }
 
-.nav-link {
+.menu-container li a{
+    margin: 0px 10px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #c4c4c4;
-    padding: 20px 0px;
-    margin: 0px 12px;
-    display: inline-block;
-    position: relative;
-    opacity: 0.75;
-}
-
-.nav-link:hover {
-    opacity: 1;
-}
-
-.nav-link::before {
-    transition: 200ms;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: #f0f0f0;
-}
-
-.nav-link-fade-up::before {
-    width: 100%;
-    bottom: 5px;
-    opacity: 0;
-}
-
-.nav-link-fade-up:hover::before {
-    bottom: 10px;
-    opacity: 1;
-}
-
-
+    font-weight: 400px;
+    font-size: 13px;
+    text-transform: uppercase;
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #ffffff; /* the color */
+    
+    color: #f0f0f0ad;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .menu-container a:hover {
+    --_p: 100%
+  }
+ 
 .menu-icon {
     display: none;
 }
@@ -103,7 +87,7 @@
 }
 
 .progress-bar {
-    height: 1px;
+    height: 3px;
     background: #ebebeb;
     width: 0%;
     box-shadow: #ebebeb 5px 0 10px;
@@ -232,7 +216,7 @@ ul li:nth-child(4) a:hover .fab {
     background-color: #0B192C;
     padding-top: 80px;
     position: relative;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 
 }
 
@@ -721,10 +705,6 @@ input::placeholder {
 
 /* responsive content close*/
 @media (max-width: 1095px) {
-    .bg-container {
-        width: 20%;
-    }
-
     .achivement_container {
         padding: 10px;
     }
@@ -738,10 +718,82 @@ input::placeholder {
 
     /* ********** */
     .menu-container-responsive {
-        display: none;
+        display: block;
+    }
+    .menu-container-responsive ul {
+        /* padding: 120px 20px; */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    .menu-container-responsive li {
+        padding: 15px;
+    }
+
+    .menu-container-responsive a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        border-bottom: 1.5px solid #ffd43b;
+    }
+
+    .menu-container-responsive {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 100%;
+        height: 70%;
+        background-color: rgba(0, 0, 0, 0.82);
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .button {
+        padding: 10px;
+        background-color: #ffc800;
+        color: rgb(67, 67, 67);
+        margin: 30px 10px 0 0;
+        border-radius: 10px;
+    }
+
+    .button a {
+        color: rgb(67, 67, 67);
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+
+    .home a{
+        color: #ffd43b;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: none;
+    }
+
+    .home i{
+        color: #ffd43b;
+        font-size: 15px;   
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
     }
 
     /* ********** */
+    .motion {
+        background-color: #010101;
+        height: 700px;
+    }
+
     .bg-container {
         width: 100%;
     }
@@ -757,9 +809,9 @@ input::placeholder {
     }
 
     .menuicon i {
-        color: #ffffff;
+        color: orange;
         font-size: 25px;
-        /* padding: 24px 35px; */
+        padding: 20px 20px;
     }
 
     .menu-container {
@@ -838,6 +890,10 @@ input::placeholder {
         padding: 30px;
     }
 
+    .about_heading_1 p {
+        padding-left: 30px;
+    }
+
     .main_skill_container {
         height: auto;
     }
@@ -884,15 +940,6 @@ input::placeholder {
 
 @media (max-width:600px) {
 
-    .close-icon {
-        position: absolute;
-        top: 30px;
-        right: 35px;
-        font-size: 25px;
-        cursor: pointer;
-        color: rgb(255, 255, 255);
-    }
-
     .menuicon {
         display: block;
     }
@@ -904,7 +951,7 @@ input::placeholder {
     }
 
     .motion {
-        height: 500px;
+        height: 550px;
     }
 
     #myVideo {
@@ -917,71 +964,6 @@ input::placeholder {
 
     .progress-bar {
         height: 2px;
-    }
-
-    .menu-container-responsive {
-        display: block;
-    }
-
-    .menu-container-responsive ul {
-        /* padding: 120px 20px; */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: right;
-    }
-
-    .menu-container-responsive li {
-        padding: 15px;
-    }
-
-    .menu-container-responsive a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        font-family: "Montserrat", sans-serif;
-        border-bottom: 1.5px solid #ffd43b;
-    }
-
-    .menu-container-responsive {
-        position: fixed;
-        top: 0px;
-        right: 0;
-        width: 100%;
-        height: 70%;
-        background-color: rgba(0, 0, 0, 0.82);
-        z-index: 999;
-        transition: all 0.3s ease-in-out;
-        border-radius: 0 0 20px 20px;
-    }
-
-    .button {
-        padding: 10px;
-        background-color: #ffc800;
-        color: rgb(67, 67, 67);
-        margin: 30px 10px 0 0;
-        border-radius: 10px;
-    }
-
-    .button a {
-        color: rgb(67, 67, 67);
-        font-size: 18px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-    }
-
-    .home a{
-        color: #ffd43b;
-        font-size: 20px;
-        font-weight: 600;
-        border-bottom: none;
-    }
-
-    .home i{
-        color: #ffd43b;
-        font-size: 15px;
-       
-        
     }
 
     .about_heading_1 p {
