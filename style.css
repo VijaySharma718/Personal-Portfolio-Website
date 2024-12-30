@@ -22,7 +22,7 @@
 }
 
 #myVideo {
-    height: 140vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -58,11 +58,11 @@
 }
 
 .menu-container li a{
+    text-decoration: none;
     margin: 0px 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400px;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 15px;
     --s: 0.1em;   /* the thickness of the line */
     --c: #ffffff; /* the color */
     
@@ -78,7 +78,7 @@
   .menu-container a:hover {
     --_p: 100%
   }
- 
+  
 .menu-icon {
     display: none;
 }
@@ -583,9 +583,8 @@ ul li:nth-child(4) a:hover .fab {
 
 #contact {
     width: 100%;
-    height: 550px;
+    height: auto;
     background-color: #0B192C;
-    border-bottom: 2px solid #c7c7c7;
   }
   
   .section-header {
@@ -609,14 +608,13 @@ ul li:nth-child(4) a:hover .fab {
   
   /* Left contact page */
   .form-horizontal {
-    /*float: left;*/
     width: 400px;
     font-family: 'Lato';
     font-weight: 400;
   }
   
   .form-control,textarea {
-    width: 100%;
+    width: -webkit-fill-available;
     background-color: #ffffff;
     color: #232323;
     letter-spacing: 1px;
@@ -699,62 +697,6 @@ ul li:nth-child(4) a:hover .fab {
     text-decoration: none;
   }
   
-  
-  /* Social Media Icons */
-  .social-media-list {
-    position: relative;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .social-media-list li a {
-    color: #fff;
-  }
-  
-  .social-media-list li {
-    position: relative; 
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer; 
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:hover {
-    background-color: #fff; 
-  }
-  
-  .social-media-list li:hover:after {
-    opacity: 1;  
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list li:hover a {
-    color: #000;
-  }
-  
   .copyright {
     font: 200 14px 'Oswald', sans-serif;
     color: #555;
@@ -762,19 +704,15 @@ ul li:nth-child(4) a:hover .fab {
     text-align: center;
     margin-top: 10px;
   }
-  
-  hr {
-    border-color: rgba(255,255,255,.6);
-  }
-  
+
 
 .goback{
-    height: 100px;
+    width: 100%;
+    height: 80px;
     background-color: #0B192C;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #c7c7c7;
 }
 .uparrow{
     padding: 10px;
@@ -826,7 +764,6 @@ ul li:nth-child(4) a:hover .fab {
         display: block;
     }
     .menu-container-responsive ul {
-        /* padding: 120px 20px; */
         list-style: none;
         padding: 0;
         margin: 0;
@@ -948,7 +885,6 @@ ul li:nth-child(4) a:hover .fab {
     .socialmenu_responsive {
         display: block;
         align-items: flex-start;
-        /* height: 130px; */
     }
 
     .p_box {
@@ -985,11 +921,6 @@ ul li:nth-child(4) a:hover .fab {
     .c-2 {
         margin-top: 3.5rem;
     }
-
-    .footer_copyright {
-        color: #e4e4e4
-    }
-
 
     .about_Paragrapg {
         padding: 30px;
@@ -1030,28 +961,23 @@ ul li:nth-child(4) a:hover .fab {
 
     /* footer */
     .contact-wrapper {
-        display: flex;
+       
         flex-direction: column;
         background-color: #0B192C;
+      
+
       }
       .direct-contact-container, .form-horizontal {
-        margin: 0 auto;
-      }  
+        width: 100%;
+      } 
       
       .direct-contact-container {
         margin-top: 60px;
         max-width: 300px;
-      }    
-      .social-media-list li {
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
-      }
-      .social-media-list li:after {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-      }
+      }  
+      
+      
+      
     }
 
 
@@ -1185,20 +1111,10 @@ ul li:nth-child(4) a:hover .fab {
         margin-top: 60px;
         max-width: 280px;
       }  
-      .social-media-list {
-        left: 0;
-      }
-      .social-media-list li {
-        height: 55px;
-        width: 55px;
-        line-height: 55px;
-        font-size: 2rem;
-      }
-      .social-media-list li:after {
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-      }
+      hr {
+        margin: 0;
+        max-width: 100%;
+       }
       
     }
 
