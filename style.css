@@ -442,8 +442,8 @@ ul li:nth-child(4) a:hover .fab {
 }
 
 .card:hover {
-        box-shadow: 0 0 11px rgba(255, 255, 255, 0.747); 
-      }
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.747);
+}
 
 
 .card-top {
@@ -775,10 +775,11 @@ textarea {
 .goback {
     width: 100%;
     height: 80px;
-    background-color: #0B192C;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .uparrow {
@@ -1091,9 +1092,11 @@ textarea {
     .container_info h3 {
         font-size: 50px;
     }
+
     .card-bottom-content span {
-            padding: 5px 5px;
+        padding: 5px 5px;
     }
+
     .main_skill_container {
         height: auto;
     }
