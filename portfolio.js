@@ -43,12 +43,22 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// footer section 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  e.target.elements.name.value = '';
-  e.target.elements.email.value = '';
-  e.target.elements.message.value = '';
+// scroll up
+
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+  if ( window.scrollY> 300) {
+    scrollToTopButton.classList.remove('hidden');
+  } else {
+    scrollToTopButton.classList.add('hidden');
+  }
 });
 
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
